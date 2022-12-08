@@ -18,6 +18,7 @@ type LinkPaginationWrapper = {
     items: LinkData[]
 }
 //@ts-ignore
+//agora vai teste
 const getPaginatedLinks = async (tenantId, cursor, take) => {
     const takeNumber = Number(take || 5)
     const args: Prisma.LinkFindManyArgs = {
